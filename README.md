@@ -1,7 +1,7 @@
 # Standard-Industry-Database-Design---SQL
 
 
-``` 
+``` sql
 /*	Project Objective: To design a standard industry like database that stores informations and other confidential details. As an aspiring Data Engineer.
 
 (1) Give a detailed breakdown on different SQL syntax used during the process, that makes it easy for a non technical audiece to understand.
@@ -10,10 +10,11 @@
 (4)	Upload to all social platforms.
 
 */
+```
 
 ----|| Create a Users table to store confidetial details || ----
 
-USE IndustryDB
+```sql
 
 CREATE TABLE UserT (
     UserID              INT PRIMARY KEY IDENTITY(1,1),      --- 'PRIMARY KEY' is a unique identifier of a table (row).
@@ -38,7 +39,7 @@ CREATE TABLE UserT (
     Updated_at          DATETIME    DEFAULT     CURRENT_TIMESTAMP,
     Deleted_at          DATETIME
 );
-
+``` 
 ----|| Create a 'user authentication providers' table to store authentication details || ----
 
 CREATE TABLE User_Auth_Providers (
@@ -65,6 +66,7 @@ CREATE TABLE Login_Attempts (
     Failure_reason      VARCHAR(100),
     Attempted_at        DATETIME    DEFAULT     CURRENT_TIMESTAMP
 );
+``` sql
 
 ----|| Create 'Payment Method' table for user to follow the payment procedures  || ----
 
@@ -83,6 +85,7 @@ CREATE TABLE Payment_Method (
     Updated_at          DATETIME    DEFAULT     CURRENT_TIMESTAMP,
     Expires_at          DATETIME                    --- Returns the datetime data type.
 );
+```sql
 
 ----|| Create 'CreditCard' table for inputing of card details in other for a user to make purchase  || ----
 
@@ -99,7 +102,8 @@ CREATE TABLE CreditCardDetails (
     BillingAddress_id   INT,    
     Created_at          DATETIME    DEFAULT     CURRENT_TIMESTAMP
 );
-
+```
+``` sql
 ----|| Create 'AddressDetails' table to store user address for Security/shipping purposes  || ----
 
 CREATE TABLE AddressDetails (
@@ -119,6 +123,7 @@ CREATE TABLE AddressDetails (
     Created_at          DATETIME    DEFAULT     (GETDATE()),
     Updated_at          DATETIME    DEFAULT     (GETDATE())     --- Returns the current date on the system. An alternative to 'CURRENT_TIMESTAMP'.
 );
+```
 
 ----|| Create 'UserPreferences' table to retain information on users choice  || ----
 
@@ -133,6 +138,9 @@ CREATE TABLE UserPreferences (
     UNIQUE (UserID, Preferences_type)
 );
 
+```
+
+```
 ----|| Create 'UserSessions' table to monitor and track user activity by location or phone || ----
 
 CREATE TABLE UserSessions (
@@ -151,7 +159,8 @@ CREATE TABLE UserSessions (
     Logout_at           DATETIME,
     Is_Active           BIT DEFAULT 1               --- Returns columns as boolean 1(True).
 );
-
+```
+```
 ----|| Create 'AuditLogs' table to track user records || ----
 
 CREATE TABLE AuditLogs (
