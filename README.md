@@ -5,8 +5,8 @@
 
 - [Project deliverable](#Project-deliverables)
 - [Tables](#Tables)
-- [Database Design Concepts](#DesignConcepts)
 - [Tools](#Tools)
+- [Database Design Concepts](#DesignConcepts)
 - [Query Visuals](#Query-Visuals)
 - [How it helps](#How-it-helps)
 
@@ -50,7 +50,7 @@ This project is a complete SQL Server based relational database designed to hand
 
 # Database design concept details:
 
-## Data Types
+### Data Types
 - VARCHAR:                  Variable length string with (max) characters.
 - BOOLEAN:                  True / False data types.
 - CHAR:                     Specified number of characters with length.
@@ -67,6 +67,9 @@ This project is a complete SQL Server based relational database designed to hand
 - NOT NULL:        Column must have a value
 - REFERENCES:      Foreign key relationship to another table
 - ON DELETE CASCADE:   Automatically delete related records when parent is deleted
+
+
+# Query and Visuals
 
 ``` sql
 
