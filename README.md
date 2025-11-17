@@ -5,7 +5,7 @@ Project Objective: To design a standard industry like database that stores infor
 companies like Google uses.
 
 
-![Visual](main/image/ERD-%20Screenshot.png)
+![Visual](image/ERD-%20Screenshot.png)
 
 
 # Database design concept details
@@ -61,7 +61,7 @@ CREATE TABLE UserT (
 
 ``` 
 
-![Visual](main/image/1.png)
+![Visual](image/1.png)
 
 
 ``` sql
