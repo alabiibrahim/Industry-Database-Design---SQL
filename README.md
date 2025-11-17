@@ -1,14 +1,16 @@
 # Standard-Industry-Database-Design---SQL
 
 
-Project Objective: To design a standard industry like database that stores informations and other confidential details. This database follows industry best practices for security, scalability and maintainability that 
+# Project Objective: 
+
+To design a standard industry like database that stores informations and other confidential details. This database follows industry best practices for security, scalability and maintainability that 
 companies like Google uses.
 
 
 ![Visual](image/ERD-%20Screenshot.png)
 
 
-# Database design concept details
+# Database design concept details:
 
 ## Data Types
 - VARCHAR:                  Variable length string with (max) characters.
