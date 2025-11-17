@@ -3,7 +3,7 @@
 
 # Table of Contents
 
-- [Project deliverable](#Project-deliverable)
+- [Project deliverable](#Project-deliverables)
 - [Tables](#Tables)
 - [Database Design Concepts](#DesignConcepts)
 - [Tools](#Tools)
@@ -56,12 +56,12 @@ This project is a complete SQL Server based relational database designed to hand
 - CHAR:                     Specified number of characters with length.
 - DECIMAL:                  Return values in a decimal place
 - TEXT:                     Return unlimited texts in a column.
-- INT;                      Integer values.
+- INT:                      Integer values.
 - DATE / DATETIME:          Returns the date or datetime column.
 - CURRENT_TIMESTAMP:        Return the current date of the system running SQL.
 - GETDATE:                  Alternative to the 'CURRENT_TIMESTAMP' function returns the system current date.
 
-# Constraints
+## Constraints
 - PRIMARY KEY:     Unique identifier for each row
 - UNIQUE:          No duplicate values allowed in this column
 - NOT NULL:        Column must have a value
@@ -277,7 +277,7 @@ CREATE TABLE AuditLogs (
 ![Visual](image/9.png)
 
 
-# How it helps
+## How it helps
 This structure represents the backbone of a scalable, secure, and analytics friendly application. It supports authentication, monitoring, payments, and personalization. All while maintaining data integrity through foreign keys, triggers, constraints, and indexing.
 
 
