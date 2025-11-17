@@ -1,7 +1,7 @@
 # Standard-Industry-Database-Design---SQL
 
 
-``` sql
+
 /*	Project Objective: To design a standard industry like database that stores informations and other confidential details. As an aspiring Data Engineer.
 
 (1) Give a detailed breakdown on different SQL syntax used during the process, that makes it easy for a non technical audiece to understand.
@@ -10,6 +10,7 @@
 (4)	Upload to all social platforms.
 
 */
+
 ``` sql
 
 ----|| Create a Users table to store confidetial details || ----
@@ -40,6 +41,9 @@ CREATE TABLE UserT (
     Deleted_at          DATETIME
 );
 ``` 
+
+``` sql
+
 ----|| Create a 'user authentication providers' table to store authentication details || ----
 
 CREATE TABLE User_Auth_Providers (
@@ -53,7 +57,8 @@ CREATE TABLE User_Auth_Providers (
     Token_expiresAt     DATETIME,
     UNIQUE (ProviderType, Provider_userID)          --- Prevents duplicates connections.
 );
-
+```
+```sql 
 ----|| Create 'login attempts' table for monitoring attempt process to enable fraud detection || ----
 
 CREATE TABLE Login_Attempts (
@@ -66,6 +71,8 @@ CREATE TABLE Login_Attempts (
     Failure_reason      VARCHAR(100),
     Attempted_at        DATETIME    DEFAULT     CURRENT_TIMESTAMP
 );
+```
+
 ``` sql
 
 ----|| Create 'Payment Method' table for user to follow the payment procedures  || ----
