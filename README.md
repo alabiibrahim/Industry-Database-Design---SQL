@@ -92,6 +92,9 @@ CREATE TABLE Payment_Method (
     Updated_at          DATETIME    DEFAULT     CURRENT_TIMESTAMP,
     Expires_at          DATETIME                    --- Returns the datetime data type.
 );
+
+```
+
 ```sql
 
 ----|| Create 'CreditCard' table for inputing of card details in other for a user to make purchase  || ----
@@ -109,7 +112,10 @@ CREATE TABLE CreditCardDetails (
     BillingAddress_id   INT,    
     Created_at          DATETIME    DEFAULT     CURRENT_TIMESTAMP
 );
+
 ```
+
+
 ``` sql
 ----|| Create 'AddressDetails' table to store user address for Security/shipping purposes  || ----
 
@@ -130,8 +136,10 @@ CREATE TABLE AddressDetails (
     Created_at          DATETIME    DEFAULT     (GETDATE()),
     Updated_at          DATETIME    DEFAULT     (GETDATE())     --- Returns the current date on the system. An alternative to 'CURRENT_TIMESTAMP'.
 );
+
 ```
 
+``` sql
 ----|| Create 'UserPreferences' table to retain information on users choice  || ----
 
 CREATE TABLE UserPreferences (
@@ -147,7 +155,7 @@ CREATE TABLE UserPreferences (
 
 ```
 
-```
+``` sql
 ----|| Create 'UserSessions' table to monitor and track user activity by location or phone || ----
 
 CREATE TABLE UserSessions (
@@ -167,7 +175,7 @@ CREATE TABLE UserSessions (
     Is_Active           BIT DEFAULT 1               --- Returns columns as boolean 1(True).
 );
 ```
-```
+```sql
 ----|| Create 'AuditLogs' table to track user records || ----
 
 CREATE TABLE AuditLogs (
