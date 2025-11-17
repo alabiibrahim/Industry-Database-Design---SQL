@@ -41,10 +41,8 @@ This project is a complete SQL Server based relational database designed to hand
 # Tools
 
 | Tools | Purpose |
-
 | --- | ---|
-
-| SQL | Data Modeling, Query, Indexing, Constraint | 
+| SQL | Data Modeling, Query, Indexing, Constraints e.t.c. | 
 
 
 # Database design concept details:
