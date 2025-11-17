@@ -1,4 +1,3 @@
-# Standard-Industry-Database-Design---SQL
 
 
 # Table of Contents
